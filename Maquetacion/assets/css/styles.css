@@ -2,6 +2,9 @@ body {
     text-align: center;
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: antialised;
 }
 
 #header {
