@@ -20,20 +20,58 @@ body {
     margin: 0px auto;
 }
 
+.clearfix {
+    clear: both;
+    float: none;
+}
+
 #logo {
     width: 30%;
     font-size: 30px;
     float: left;
+    margin-top: 35px;
 }
 
 #logo img {
     display: block;
     float: left;
     height: 60px;
+    margin-top: -9px;
+    margin-right: -10px;
 }
 
 #brand {
     display: block;
     margin: 0px;
     float: left;
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+
+#menu ul {
+    line-height: 85px;
+    width: 60%;
+    float: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #444;
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    color: #3cb2d3;
 }
