@@ -5,6 +5,21 @@
         <title>Maquetación para el Máster en Frameworks JavaScript</title>
 
         <link rel="stylesheet" href="assets/css/styles.css"/>
+
+        <script type="text/javascript">
+            window.addEventListener("load", function(){
+                var template = document.getElementById("article-template");
+                var articles = document.getElementById("articles");
+
+                for(var i=1; i<=5; i++){
+                    var clone = template.cloneNode(true);
+                    clone.removeAttribute("id");
+                    var cloneTitle = clone.getElementsByTagName("h2")[0];
+                    cloneTitle.innerHTML = cloneTitle.textContent + " " + i;
+                    articles.appendChild(clone);
+                }
+            });
+        </script>
     </head>
     <body>
         <header id="header">
@@ -36,6 +51,18 @@
         <div class="center">
             <section id="content">
                 <h2>Últimos artículos</h2>
+                <div id="articles">
+                    <article id="article-template" class="article-item">
+                        <div class="image-wrap">
+                            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgeoffreymorrison%2Ffiles%2F2017%2F09%2FScotland-Road-Trip-13-of-16.jpg" alt="Paisaje"/>
+                        </div>
+                        <h2>Articulo de prueba</h2>
+                        <span class="date">
+                            Hace 5 minutos
+                        </span>
+                        <a href="">Leer más</a>
+                    </article>
+                </div>
             </section>
             <aside id="sidebar">
                 <div id="nav-blog" class="sidebar-item">
